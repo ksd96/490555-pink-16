@@ -3,60 +3,59 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <a class="header__logo">
-        <img class="header__logo-image" src="#" alt="Логотип Пинк">
+        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
       </a>
       <nav class="nav">
-        <button class="nav__toggle" type="button">Открыть меню</button>
+        <div class="nav-btn">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
         <div class="nav__wrapper">
           <ul class="nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">ГЛАВНАЯ</a>
             </li>
             <li class="site-list__item ">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">ФОТОГРАФИИ</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
+              <a class="site-list__link">КОНКУРС</a>
             </li>
             <li class="site-list__item">
-              <a href="#">html academy</a>
+              <a class="site-list__link" href="#">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main">
-      <section class="main__competition">
+      <div class="main__competition">
         <h2 class="main__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      </section>
+      </div>
     </main>
     <footer class="footer">
-      <img class="footer__logo" src="#" alt="Логотип Пинк">
+      <a class="footer__logo" href="#">
+        <span class="visually-hidden">Логотип Пинк</span>
+      </a>
       <ul class="footer__social">
         <li class="footer__item">
-          <a class="footer__link footer__link--tw" href="#">
-            <img src="#" alt="Логотип твиттер">
-          </a>
+          <button class="footer__link footer__link--tw" type="button"><span class="visually-hidden">twitter</span></button>
         </li>
         <li class="footer__item">
-          <a class="footer__link footer__link--fb" href="#">
-            <img src="#" alt="Логотип фейсбук">
-          </a>
+          <button class="footer__link footer__link--fb" type="button"><span class="visually-hidden">facebook</span></button>
         </li>
         <li class="footer__item">
-          <a class="footer__link footer__link--yt" href="#">
-            <img src="#" alt="Логотип ютуб">
-          </a>
+          <button class="footer__link footer__link--yt" type="button"><span class="visually-hidden">youtube</span></button>
         </li>
       </ul>
       <div class="footer__developer developer">
         <b class="developer__text">Разработано</b>
-        <a class="developer__link" href="#">
-          <img src="#" alt="Логотип разработчика">
+        <a class="developer__link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Логотип разработчика</span>
         </a>
       </div>
     </footer>

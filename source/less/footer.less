@@ -1,0 +1,121 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  min-height: 284px;
+}
+
+.footer__logo {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 40px;
+
+  width: 146.3px;
+  height: 40.375px;
+
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/logo-pink-blue-mobile-focus.svg");
+  }
+  &:active {
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+    opacity: 0.3;
+  }
+
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+
+  min-width: 178px;
+
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 40px;
+
+  list-style: none;
+}
+
+.footer__link {
+  width: 52px;
+  height: 52px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 3px solid #f1f2f3;
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    border: 3px solid #283645;
+  }
+  &:active {
+    border: 3px solid #f1f2f3;
+  }
+}
+
+.footer__link--tw {
+  background-image: url("../img/icon-twitter.svg");
+
+  &:active {
+    background-image: url("../img/icon-twitter-active.svg");
+  }
+}
+
+.footer__link--fb {
+  background-image: url("../img/icon-facebook.svg");
+
+  &:active {
+    background-image: url("../img/icon-facebook-active.svg");
+  }
+}
+
+.footer__link--yt {
+  background-image: url("../img/icon-youtube.svg");
+
+  &:active {
+    background-image: url("../img/icon-youtube-active.svg");
+  }
+}
+
+.developer {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.developer__text {
+  margin-right: 16px;
+  margin-top: 4px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.developer__link {
+  margin-top: -2px;
+
+  width: 26.943px;
+  height: 34.09px;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/logo-htmlacademy-focus.svg");
+  }
+  &:active {
+    background-image: url("../img/logo-htmlacademy-active.svg");
+  }
+
+}

@@ -3,27 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-image" src="#" alt="Логотип Пинк">
+      <a class="header__logo" href="#">
+        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
       </a>
       <nav class="nav">
-        <button class="nav__toggle" type="button">Открыть меню</button>
+        <div class="nav-btn">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
         <div class="nav__wrapper">
           <ul class="nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">ГЛАВНАЯ</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">ФОТОГРАФИИ</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">КОНКУРС</a>
             </li>
             <li class="site-list__item">
-              <a href="#">html academy</a>
+              <a class="site-list__link" href="#">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
@@ -31,17 +35,19 @@
     </header>
     <main class="main">
       <section class="download">
-        <img class="download__image" src="#" alt="Фото фильтр">
+        <div class="download__background">
+          <img class="download__image" src="img/iphone-hand-mobile@1x.png" alt="Фото фильтр">
+        </div>
         <button class="download__button" type="button">Скачать приложение</button>
         <ul class="download__list">
           <li class="download__item">
-            <img src="#" alt="Логоти apple">
+            <img src="img/logo-apple.svg" alt="Логоти apple">
           </li>
           <li class="download__item">
-            <img src="#" alt="Логоти android">
+            <img src="img/logo-android.svg" alt="Логоти android">
           </li>
           <li class="download__item">
-            <img src="#" alt="Логоти windows">
+            <img src="img/logo-microsoft.svg" alt="Логоти windows">
           </li>
         </ul>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -49,6 +55,7 @@
       <section class="advantages">
         <p class="advantages__question">Устали от серости мегаполиса?</p>
         <p class="advantages__answer">Нам есть, что вам предложить!</p>
+        <div class="advantages__mask"></div>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -63,7 +70,9 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages__image" src="#" alt="Фото всем привет">
+        <div class="advantages__img-block">
+          <img class="advantages__image" src="img/iphone-screen-3-tablet@1x.png" width="157px" height="278px" alt="Фото всем привет">
+        </div>
       </section>
     </main>
   </body>
