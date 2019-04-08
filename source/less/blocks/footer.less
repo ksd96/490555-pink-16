@@ -1,0 +1,63 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  width: @width-main;
+  min-height: 284px;
+}
+
+.footer__logo {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 40px;
+
+  width: 146px;
+  height: 40px;
+
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/logo-pink-blue-mobile-focus.svg");
+  }
+
+  &:active {
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+    opacity: 0.3;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+
+  min-width: 178px;
+
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 40px;
+
+  list-style: none;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid #f1f2f3;
+  border-radius: 50px;
+
+  width: 46px;
+  height: 46px;
+
+  &:hover,
+  &:focus {
+    border: 3px solid @color-main;
+  }
+
+  &:active {
+    border: 3px solid #f1f2f3;
+    opacity: 0.3;
+  }
+}
