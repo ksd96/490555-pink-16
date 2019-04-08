@@ -1,0 +1,36 @@
+.developer {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  margin-top: 37px;
+  padding: 0;
+
+  min-height: 34px;
+}
+
+.developer__text {
+  margin-right: 15px;
+  margin-top: 6px;
+
+  font-size: @font-main;
+  line-height: 18px;
+  font-weight: 400;
+  color: @color-main;
+}
+
+.developer__link {
+  width: 27px;
+  height: 34px;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/logo-htmlacademy-focus.svg");
+  }
+
+  &:active {
+    background-image: url("../img/logo-htmlacademy-active.svg");
+  }
+}

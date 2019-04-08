@@ -2,35 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <a class="header__logo" href="#">
-        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+        <img class="header__image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
       </a>
       <nav class="nav">
-        <div class="nav-btn">
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-        <div class="nav__wrapper">
-          <ul class="nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">ГЛАВНАЯ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">ФОТОГРАФИИ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">КОНКУРС</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </div>
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">ГЛАВНАЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">ФОТОГРАФИИ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">КОНКУРС</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main">
@@ -41,21 +37,26 @@
         <button class="download__button" type="button">Скачать приложение</button>
         <ul class="download__list">
           <li class="download__item">
-            <img src="img/logo-apple.svg" alt="Логоти apple">
+            <a class="download__link" href="https://www.apple.com/ru/ios/app-store/">
+              <img src="img/logo-apple.svg" alt="Логоти apple">
+            </a>
           </li>
           <li class="download__item">
-            <img src="img/logo-android.svg" alt="Логоти android">
+            <a class="download__link" href="https://play.google.com/store?hl=ru">
+              <img src="img/logo-android.svg" alt="Логоти android">
+            </a>
           </li>
           <li class="download__item">
-            <img src="img/logo-microsoft.svg" alt="Логоти windows">
+            <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+              <img src="img/logo-microsoft.svg" alt="Логоти windows">
+            </a>
           </li>
         </ul>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
         <p class="advantages__question">Устали от серости мегаполиса?</p>
-        <p class="advantages__answer">Нам есть, что вам предложить!</p>
-        <div class="advantages__mask"></div>
+        <p class="advantages__question advantages__question--answer">Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -70,8 +71,8 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="advantages__img-block">
-          <img class="advantages__image" src="img/iphone-screen-3-tablet@1x.png" width="157px" height="278px" alt="Фото всем привет">
+        <div class="advantages__img-box">
+          <img class="advantages__image" src="img/iphone-screen-3-tablet@1x.png" width="157" height="278" alt="Фото всем привет">
         </div>
       </section>
     </main>

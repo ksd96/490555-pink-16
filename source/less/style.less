@@ -1,35 +1,38 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", "sans-serif";
-  width: 320px;
+
+@import "common.less";
+@import "blocks/header.less";
+@import "blocks/nav.less";
+@import "blocks/site-list.less";
+@import "blocks/download.less";
+@import "blocks/advantages.less";
+@import "blocks/user-photos.less";
+@import "blocks/user.less";
+@import "blocks/footer.less";
+@import "blocks/developer.less";
+@import "blocks/main.less";
+@import "variables.less";
+
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-a {
-  text-decoration: none;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+       url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
-
-@import "header.less";
-@import "download.less";
-@import "advantages.less";
-@import "user-photos.less";
-@import "footer.less";
-@import "main__competition";
