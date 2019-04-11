@@ -23,10 +23,10 @@
   border: 0;
 }
 
-@media (min-width: 660px) {
+@media (min-width: @width-tablet) {
   .nav {
     min-height: 365px;
-    width: 660px;
+    width: @width-tablet;
   }
 
   .nav__toggle {
@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @width-desktop) {
   .nav {
     flex-direction: row;
     justify-content: flex-end;
@@ -44,7 +44,7 @@
     left: 0;
 
     min-height: 110px;
-    min-width: 1200px;
+    min-width: @width-desktop;
 
     background-color: rgba(0, 0, 0, 0.3);
 

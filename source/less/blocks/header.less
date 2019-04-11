@@ -35,34 +35,36 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: @width-tablet) {
   .header__image {
+    &--tablet {
+      display: block;
+      position: absolute;
+      top: 27px;
+      left: 20px;
+    }
+
     display: none;
 
     &--desktop {
       display: none;
     }
   }
-
-  .header__image--tablet {
-    display: block;
-    position: absolute;
-    top: 27px;
-    left: 20px;
-  }
 }
 
-@media (min-width: 1200px) {
-  .header__image--desktop {
-    display: block;
-    position: absolute;
-    top: 27px;
-    left: 130px;
-    z-index: 9;
-  }
+@media (min-width: @width-desktop) {
+  .header__image {
+    &--desktop {
+      display: block;
+      position: absolute;
+      top: 27px;
+      left: 130px;
+      z-index: 9;
+    }
 
-  .header__image--tablet {
-    display: none;
+    &--tablet {
+      display: none;
+    }
   }
 
   .header {
