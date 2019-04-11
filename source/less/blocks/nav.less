@@ -22,3 +22,37 @@
 
   border: 0;
 }
+
+@media (min-width: 660px) {
+  .nav {
+    min-height: 365px;
+    width: 660px;
+  }
+
+  .nav__toggle {
+    margin-top: 45px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    min-height: 110px;
+    min-width: 1200px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    z-index: 8;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
