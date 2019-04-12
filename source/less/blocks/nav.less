@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: flex-end;
 
-  min-height: 325px;
-  width: @width-main;
+  min-height: 70px;
+  width: 100%;
 
   background-color: @color-main;
 }
@@ -23,14 +23,61 @@
   border: 0;
 }
 
+@media (max-width: 1199px) {
+  .nav--closed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav--closed .nav__toggle {
+    background-image: url("../img/icon-menu-burger.svg");
+    height: 24px;
+    width: 51px;
+  }
+
+  .nav--closed .site-list {
+    display: none;
+  }
+
+  .nav--opened .sire-list {
+    display: flex;
+  }
+
+  .nav--nojs .nav__toggle {
+      display: none;
+  }
+
+  .nav--nojs {
+    position: static;
+    background-color: @color-main;
+  }
+
+  .nav--nojs .site-list {
+    display: flex;
+    margin-top: 70px;
+    position: static;
+  }
+}
+
 @media (min-width: @width-tablet) {
   .nav {
-    min-height: 365px;
-    width: @width-tablet;
+    min-height: 110px;
+    min-width: @width-tablet;
   }
 
   .nav__toggle {
     margin-top: 45px;
+  }
+
+  .nav--nojs .site-list {
+    margin-top: 110px;
+  }
+
+  .nav--opened .download {
+    min-height: 617px;
   }
 }
 
@@ -53,5 +100,9 @@
 
   .nav__toggle {
     display: none;
+  }
+
+  .nav--nojs .site-list {
+    margin-top: 0;
   }
 }
