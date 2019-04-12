@@ -1,0 +1,161 @@
+.timer-box {
+  display: none;
+}
+
+@media (min-width: @width-tablet) {
+  .timer-box {
+    display: flex;
+    justify-content: space-between;
+
+    min-height: 276px;
+    width: @width-tablet;
+
+    margin: 0;
+    margin-top: 59px;
+    padding: 0;
+  }
+
+  .timer-box__timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+
+    width: 238px;
+    height: 276px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-size: 238px 276px;
+    background-repeat: no-repeat;
+  }
+
+  .timer-box__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+
+    width: 202px;
+    height: 202px;
+
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: 700;
+    color: #d22856;
+
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-size: 202px 202px;
+    background-repeat: no-repeat;
+  }
+
+  .timer-box__timer-description {
+    width: 296px;
+    min-height: 201px;
+
+    margin: 0;
+    margin-top: 37px;
+    margin-right: 35px;
+    padding: 0;
+  }
+
+  .timer-box__timer-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .timer-box__timer-text {
+    font-size: @font-main;
+    line-height: @line-height-main;
+    font-weight: 400;
+    color: @color-main;
+
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .timer-box__timer-link {
+    font-size: @font-main;
+    line-height: @line-height-main;
+    font-weight: 400;
+    color: #d22856;
+
+    margin: 0;
+    padding: 0;
+
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .timer-box {
+    justify-content: flex-start;
+    min-height: 276px;
+    width: @width-desktop;
+
+    background-color: #f2f2f2;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 31px;
+  }
+
+  .timer-box__timer-description {
+    width: 535px;
+    min-height: 201px;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .timer-box__timer-title {
+    margin-top: 91px;
+    margin-bottom: 21px;
+  }
+
+  .timer-box__timer-text {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 32px;
+  }
+
+  .timer-box__timer-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .timer-box__timer {
+    background-size: 298px 345px;
+
+    width: 298px;
+    height: 345px;
+
+    margin-left: 131px;
+    margin-right: 67px;
+  }
+
+  .timer-box__number {
+    width: 253px;
+    height: 265px;
+
+    margin-top: 33px;
+
+    font-size: 120px;
+    line-height: 186px;
+
+    background-size: 253px 253px;
+    background-position: bottom left;
+  }
+}

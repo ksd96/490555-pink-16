@@ -1,10 +1,3 @@
-.user {
-  display: flex;
-  flex-direction: column;
-
-  position: relative;
-}
-
 .user__photo-day {
   display: flex;
   justify-content: center;
@@ -29,6 +22,7 @@
   flex-direction: column;
 
   margin: 0 20px;
+  margin-top: -5px;
   padding: 0;
   padding-top: 18px;
   padding-left: 17px;
@@ -98,12 +92,163 @@
 }
 
 .user__image {
-  margin: 0 auto;
+  margin: 0 20px;
   margin-top: 21px;
   padding: 0;
 
   &--panorama {
     padding: 0;
     margin: 0 auto;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.user--top {
+  position: relative;
+}
+
+@media (min-width: @width-tablet) {
+  .user {
+    width: 300px;
+    min-height: 453px;
+
+    margin-bottom: 20px;
+
+    &--top {
+      width: @width-tablet;
+      min-height: 630px;
+
+      margin-bottom: 50px;
+    }
+  }
+
+  .user__image {
+    display: none;
+
+    &--tablet {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .user__profile {
+    margin: 0;
+    padding: 0;
+    padding-left: 27px;
+
+    position: relative;
+
+    width: 273px;
+    min-height: 155px;
+
+    &--top {
+      margin: 0 20px;
+      padding: 0;
+      padding-left: 27px;
+      width: 593px;
+      min-height: 121px;
+    }
+  }
+
+  .user__name {
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .user__profile-likes {
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 22px;
+    left: 27px;
+
+    width: 241px;
+    margin: 0;
+    padding: 0;
+
+    &--top {
+      margin: 0;
+      padding: 0;
+
+      width: 120px;
+
+      position: absolute;
+      top: 26px;
+      right: 50px;
+      bottom: 78px;
+      left: 472px;
+    }
+  }
+
+  .user__btn {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    order: 2;
+    background-position: top 0 right 0;
+  }
+
+  .user__comment--top {
+    width: 510px;
+  }
+
+  .user__photo-day {
+    top: 57px;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .user__image {
+    margin: 0;
+    padding: 0;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .user__profile--top {
+    margin: 0 130px;
+    width: 913px;
+    min-height: 96px;
+  }
+
+  .user__comment--top {
+    width: 100%;
+  }
+
+  .user__profile-likes--top {
+    top: 25px;
+    right: 27px;
+    bottom: 53px;
+    left: 789px;
+  }
+
+  .user {
+    margin-bottom: 54px;
+
+    &--top {
+      width: @width-desktop;
+      margin-bottom: 22px;
+    }
+  }
+
+  .user__photo-day {
+    right: 130px;
+    top: 54px;
   }
 }
