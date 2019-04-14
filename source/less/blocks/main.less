@@ -21,6 +21,32 @@
   text-align: center;
 }
 
+@media (max-width: 1199px) {
+  .body--closed .main__competition {
+    min-height: 240px;
+  }
+
+  .body--opened .main__competition {
+    min-height: 170px;
+  }
+
+  .body--nojs .main__competition {
+    min-height: 170px;
+  }
+
+  .body--closed .main__title {
+    padding-top: 98px;
+  }
+
+  .body--opened .main__title {
+    padding-top: 28px;
+  }
+
+  .body--nojs .main__title {
+    padding-top: 28px;
+  }
+}
+
 @media (min-width: @width-tablet) {
   .main__competition {
     width: 100%;
@@ -40,6 +66,30 @@
     font-weight: 300;
     line-height: 60px;
   }
+
+  .body--closed .main__competition {
+    min-height: 438px;
+  }
+
+  .body--opened .main__competition {
+    min-height: 328px;
+  }
+
+  .body--nojs .main__competition {
+    min-height: 328px;
+  }
+
+  .body--closed .main__title {
+    padding-top: 179px;
+  }
+
+  .body--opened .main__title {
+    padding-top: 69px;
+  }
+
+  .body--nojs .main__title {
+    padding-top: 69px;
+  }
 }
 
 @media (min-width: @width-desktop) {
@@ -53,6 +103,14 @@
 
   .main__title {
     padding: 0 200px;
+    padding-top: 173px;
+  }
+
+  .body--nojs .main__competition {
+    min-height: 394px;
+  }
+
+  .body--nojs .main__title {
     padding-top: 173px;
   }
 }
