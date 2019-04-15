@@ -7,11 +7,12 @@
   margin: 0;
   padding: 0;
 
-  width: @width-main;
+  width: 100%;
   min-height: 170px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: top -65px left 0;
 }
 
@@ -27,7 +28,7 @@
 }
 
 .user-photos__box-description {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   min-height: 184px;
@@ -52,7 +53,7 @@
 
   width: @width-main;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -70,14 +71,34 @@
   list-style: none;
 }
 
+@media (max-width: 1199px) {
+  .body--closed .user-photos__box-title {
+    min-height: 240px;
+  }
+
+  .body--opened .user-photos__box-title,
+  .body--nojs .user-photos__box-title {
+    min-height: 170px;
+  }
+
+  .body--closed .user-photos__title {
+    margin-top: 98px;
+  }
+
+  .body--opened .user-photos__title,
+  .body--nojs .user-photos__title {
+    margin-top: 28px;
+  }
+}
+
 @media (min-width: @width-tablet) {
   .user-photos__box-title {
-    width: @width-tablet;
+    width: 100%;
     min-height: 328px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: top -110px center;
+    background-position: top center;
   }
 
   .user-photos__title {
@@ -91,7 +112,7 @@
   }
 
   .user-photos__box-description {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 
     width: @width-tablet;
@@ -99,7 +120,7 @@
   }
 
   .user-photos__description {
-    margin: 0;
+    margin: 0 auto;
     margin-top: 92px;
     padding: 0 100px;
 
@@ -107,7 +128,7 @@
   }
 
   .user-photos__list {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: @width-tablet;
   }
@@ -120,6 +141,24 @@
     margin: 0;
     padding: 0 20px;
     width: 620px;
+  }
+
+  .body--closed .user-photos__box-title {
+    min-height: 438px;
+  }
+
+  .body--opened .user-photos__box-title,
+  .body--nojs .user-photos__box-title {
+    min-height: 328px;
+  }
+
+  .body--closed .user-photos__title {
+    margin-top: 180px;
+  }
+
+  .body--opened .user-photos__title,
+  .body--nojs .user-photos__title {
+    margin-top: 70px;
   }
 }
 
@@ -138,6 +177,14 @@
     padding: 0 300px;
   }
 
+  .user-photos__list {
+    width: @width-desktop;
+  }
+
+  .user-photos__box-title--nojs .user-photos__title {
+    margin-top: 175px;
+  }
+
   .user-photos__box-description {
     width: @width-desktop;
     min-height: 240px;
@@ -151,5 +198,13 @@
     width: 940px;
 
     padding: 0 130px;
+  }
+
+  .body--nojs .user-photos__box-title {
+    min-height: 394px;
+  }
+
+  .body--nojs .user-photos__title {
+    margin-top: 175px;
   }
 }

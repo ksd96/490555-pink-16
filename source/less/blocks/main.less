@@ -3,7 +3,7 @@
   margin-top: 0;
   padding: 0;
 
-  width: @width-main;
+  width: 100%;
   min-height: 170px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -21,9 +21,29 @@
   text-align: center;
 }
 
+@media (max-width: 1199px) {
+  .body--closed .main__competition {
+    min-height: 240px;
+  }
+
+  .body--opened .main__competition,
+  .body--nojs .main__competition {
+    min-height: 170px;
+  }
+
+  .body--closed .main__title {
+    padding-top: 98px;
+  }
+
+  .body--opened .main__title,
+  .body--nojs .main__title {
+    padding-top: 28px;
+  }
+}
+
 @media (min-width: @width-tablet) {
   .main__competition {
-    width: @width-tablet;
+    width: 100%;
     min-height: 328px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -40,6 +60,24 @@
     font-weight: 300;
     line-height: 60px;
   }
+
+  .body--closed .main__competition {
+    min-height: 438px;
+  }
+
+  .body--opened .main__competition,
+  .body--nojs .main__competition {
+    min-height: 328px;
+  }
+
+  .body--closed .main__title {
+    padding-top: 179px;
+  }
+
+  .body--opened .main__title,
+  .body--nojs .main__title {
+    padding-top: 69px;
+  }
 }
 
 @media (min-width: @width-desktop) {
@@ -53,6 +91,14 @@
 
   .main__title {
     padding: 0 200px;
+    padding-top: 173px;
+  }
+
+  .body--nojs .main__competition {
+    min-height: 394px;
+  }
+
+  .body--nojs .main__title {
     padding-top: 173px;
   }
 }
