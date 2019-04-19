@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.min.js" async></script>
   </head>
   <body class="body body--closed body--nojs">
     <header class="header">
@@ -45,9 +49,11 @@
         </div>
         <ul class="user-photos__list">
           <li class="user user--top">
-            <img class="user__image user__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Фото панорама" width="320" height="137">
-            <img class="user__image user__image--tablet user__image--panorama" src="img/panorama-tablet@1x.jpg" alt="Фото панорама" width="660" height="509">
-            <img class="user__image user__image--desktop user__image--panorama" src="img/panorama-desktop@1x.jpg" alt="Фото панорама" width="1200" height="506">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="user__image user__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото панорама" width="320" height="137">
+            </picture>
             <span class="user__photo-day">ПАНОРАМА ДНЯ</span>
             <div class="user__profile user__profile--top">
               <b class="user__name">Анна <span class="user__time">(5 МИНУТ НАЗАД)</span></b>
@@ -61,9 +67,11 @@
           <li class="user-list">
             <ul class="user-photos__tablet">
               <li class="user">
-                <img class="user__image" src="img/photo-car-mobile@1x.jpg" alt="фото пользователя" width="280" height="180">
-                <img class="user__image user__image--tablet" src="img/photo-car-tablet@1x.jpg" alt="фото пользователя" width="300" height="300">
-                <img class="user__image user__image--desktop" src="img/photo-car-desktop@1x.jpg" alt="фото пользователя" width="300" height="400">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="user__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+                </picture>
                 <div class="user__profile">
                   <b class="user__name">Левон <span class="user__time">(5 ЧАСОВ НАЗАД)</span></b>
                   <p class="user__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -74,9 +82,11 @@
                 </div>
               </li>
               <li class="user">
-                <img class="user__image" src="img/photo-drumset-mobile@1x.jpg" alt="фото пользователя" width="280" height="180">
-                <img class="user__image user__image--tablet" src="img/photo-drumset-tablet@1x.jpg" alt="фото пользователя" width="300" height="300">
-                <img class="user__image user__image--desktop" src="img/photo-drumset-desktop@1x.jpg" alt="фото пользователя" width="300" height="400">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="user__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+                </picture>
                 <div class="user__profile">
                   <b class="user__name">Антон <span class="user__time">(12 ЧАСОВ НАЗАД)</span></b>
                   <p class="user__comment">Соседи будут рады!</p>
@@ -87,9 +97,11 @@
                 </div>
               </li>
               <li class="user">
-                <img class="user__image" src="img/photo-window-mobile@1x.jpg" alt="фото пользователя" width="280" height="180">
-                <img class="user__image user__image--tablet" src="img/photo-window-tablet@1x.jpg" alt="фото пользователя" width="300" height="300">
-                <img class="user__image user__image--desktop" src="img/photo-window-desktop@1x.jpg" alt="фото пользователя" width="300" height="400">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="user__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+                </picture>
                 <div class="user__profile">
                   <b class="user__name">Борис <span class="user__time">(20 ЧАСОВ НАЗАД)</span></b>
                   <p class="user__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -100,9 +112,11 @@
                 </div>
               </li>
               <li class="user">
-                <img class="user__image" src="img/photo-fair-mobile@1x.jpg" alt="фото пользователя" width="280" height="180">
-                <img class="user__image user__image--tablet" src="img/photo-fair-tablet@1x.jpg" alt="фото пользователя" width="300" height="300">
-                <img class="user__image user__image--desktop" src="img/photo-fair-desktop@1x.jpg" alt="фото пользователя" width="300" height="400">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="user__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+                </picture>
                 <div class="user__profile">
                   <b class="user__name">Сергей <span class="user__time">(25 ЧАСОВ НАЗАД)</span></b>
                   <p class="user__comment">Самая кубанская в мире!</p>
@@ -113,9 +127,11 @@
                 </div>
               </li>
               <li class="user">
-                <img class="user__image" src="img/photo-pov-mobile@1x.jpg" alt="фото пользователя" width="280" height="180">
-                <img class="user__image user__image--tablet" src="img/photo-pov-tablet@1x.jpg" alt="фото пользователя" width="300" height="300">
-                <img class="user__image user__image--desktop" src="img/photo-pov-desktop@1x.jpg" alt="фото пользователя" width="300" height="400">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="user__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+                </picture>
                 <div class="user__profile">
                   <b class="user__name">Максим <span class="user__time">(40 ЧАСОВ НАЗАД)</span></b>
                   <p class="user__comment">Где снег-то?</p>
@@ -126,9 +142,11 @@
                 </div>
               </li>
               <li class="user">
-                <img class="user__image" src="img/photo-wing-mobile@1x.jpg" alt="фото пользователя" width="280" height="180">
-                <img class="user__image user__image--tablet" src="img/photo-wing-tablet@1x.jpg" alt="фото пользователя" width="300" height="300">
-                <img class="user__image user__image--desktop" src="img/photo-wing-desktop@1x.jpg" alt="фото пользователя" width="300" height="400">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="user__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+                </picture>
                 <div class="user__profile">
                   <b class="user__name">Надежда <span class="user__time">(45 ЧАСОВ НАЗАД)</span></b>
                   <p class="user__comment">Всем GM и взаимные лайки!</p>

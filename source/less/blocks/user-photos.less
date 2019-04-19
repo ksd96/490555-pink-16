@@ -14,6 +14,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top -65px left 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
 }
 
 .user-photos__title {
@@ -99,6 +103,10 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+      }
   }
 
   .user-photos__title {
@@ -169,6 +177,10 @@
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: top center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+      }
   }
 
   .user-photos__title {
@@ -200,7 +212,8 @@
     padding: 0 130px;
   }
 
-  .body--nojs .user-photos__box-title {
+  .body--nojs .user-photos__box-title,
+  .body--closed .user-photos__box-title {
     min-height: 394px;
   }
 
