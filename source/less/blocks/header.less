@@ -18,18 +18,20 @@
   &--desktop {
     display: none;
   }
+
+  fill: #ffffff;
 }
 
 .header__logo {
   &:hover,
   &:focus {
-    .header__image-color {
+    .header__image {
       fill: #d22856;
     }
   }
 
   &:active {
-    .header__image-color {
+    .header__image {
       fill: #ffffff;
       opacity: 0.3;
     }
@@ -43,6 +45,7 @@
       position: absolute;
       top: 27px;
       left: 20px;
+      z-index: 9;
     }
 
     display: none;
@@ -65,6 +68,22 @@
 
     &--tablet {
       display: none;
+    }
+  }
+
+  .header__logo {
+    &:hover,
+    &:focus {
+      .header__image {
+        fill: #d22856;
+      }
+    }
+
+    &:active {
+      .header__image {
+        fill: #ffffff;
+        opacity: 0.3;
+      }
     }
   }
 
