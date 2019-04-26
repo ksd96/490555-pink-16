@@ -25,15 +25,10 @@
 
 @media (max-width: 1199px) {
   .body--closed .nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 8;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
   .body--nojs .nav {
-    position: static;
     background-color: @color-main;
   }
 
@@ -61,9 +56,6 @@
 @media (min-width: @width-desktop) {
   .nav {
     background-color: rgba(0, 0, 0, 0.3);
-
-    position: absolute;
-    z-index: 8;
   }
 
   .nav__toggle {

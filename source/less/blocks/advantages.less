@@ -174,7 +174,9 @@
 
 @media (min-width: @width-desktop) {
   .advantages {
-    width: @width-desktop;
+    min-width: @width-desktop;
+
+    margin: 0 auto;
   }
 
   .advantages__question {
@@ -194,19 +196,17 @@
     margin-top: 48px;
 
     background-image: url("../img/bg-triangle-white.svg");
-    background-position: top  left 0;
-    background-size: auto;
+    background-position: top  left;
     background-repeat: no-repeat;
     background-color: @color-decor;
 
-    width: @width-desktop;
+    width: 100%;
     min-height: 481px;
   }
 
   .advantages__list {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    padding-left: 160px;
 
     flex-direction: row;
     justify-content: flex-start;
