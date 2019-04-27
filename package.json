@@ -19,7 +19,8 @@
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "del": "^4.1.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -43,8 +44,5 @@
   ],
   "engines": {
     "node": "8.15"
-  },
-  "dependencies": {
-    "del": "^4.1.0"
   }
 }
