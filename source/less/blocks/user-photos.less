@@ -9,15 +9,6 @@
 
   width: 100%;
   min-height: 170px;
-
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top -65px left 0;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-  }
 }
 
 .user-photos__title {
@@ -75,38 +66,10 @@
   list-style: none;
 }
 
-@media (max-width: 1199px) {
-  .body--closed .user-photos__box-title {
-    min-height: 240px;
-  }
-
-  .body--opened .user-photos__box-title,
-  .body--nojs .user-photos__box-title {
-    min-height: 170px;
-  }
-
-  .body--closed .user-photos__title {
-    margin-top: 98px;
-  }
-
-  .body--opened .user-photos__title,
-  .body--nojs .user-photos__title {
-    margin-top: 28px;
-  }
-}
-
 @media (min-width: @width-tablet) {
   .user-photos__box-title {
     width: 100%;
     min-height: 328px;
-
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
   }
 
   .user-photos__title {
@@ -150,51 +113,22 @@
     padding: 0 20px;
     width: 620px;
   }
-
-  .body--closed .user-photos__box-title {
-    min-height: 438px;
-  }
-
-  .body--opened .user-photos__box-title,
-  .body--nojs .user-photos__box-title {
-    min-height: 328px;
-  }
-
-  .body--closed .user-photos__title {
-    margin-top: 180px;
-  }
-
-  .body--opened .user-photos__title,
-  .body--nojs .user-photos__title {
-    margin-top: 70px;
-  }
 }
 
 @media (min-width: @width-desktop) {
   .user-photos__box-title {
     width: @width-desktop;
-    min-height: 394px;
-
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: top center;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
+    min-height: 284px;
+    margin: 0 auto;
   }
 
   .user-photos__title {
-    margin-top: 175px;
-
+    margin-top: 65px;
     padding: 0 300px;
   }
 
   .user-photos__list {
     width: @width-desktop;
-  }
-
-  .user-photos__box-title--nojs .user-photos__title {
-    margin-top: 175px;
   }
 
   .user-photos__box-description {
@@ -210,14 +144,5 @@
     width: 940px;
 
     padding: 0 130px;
-  }
-
-  .body--nojs .user-photos__box-title,
-  .body--closed .user-photos__box-title {
-    min-height: 394px;
-  }
-
-  .body--nojs .user-photos__title {
-    margin-top: 175px;
   }
 }
