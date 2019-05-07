@@ -1,0 +1,197 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+.comments__list {
+  list-style: none;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+.comments__button-desktop {
+  display: none;
+}
+
+.comments__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 41px;
+  margin-bottom: 13px;
+}
+
+.comments__name-description {
+  display: none;
+}
+
+.comments__text {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  color: @color-main;
+
+  width: 280px;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+}
+
+.comments__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 0;
+
+  width: 59px;
+}
+
+.comments__btn {
+  width: 6px;
+  height: 6px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #bec2c7;
+
+  border-radius: 10px;
+  border: none;
+
+  &--active {
+    width: 12px;
+    height: 12px;
+
+    border: 3px solid @color-main;
+    background-color: #e9ebec;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+@media (min-width: @width-tablet) {
+  .comments__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comments__name {
+    order: 2;
+
+    font-size: 20px;
+
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
+  .comments__name-description {
+    display: block;
+    order: 3;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @color-main;
+
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 34px;
+  }
+
+  .comments__text {
+    order: 1;
+
+    width: 620px;
+
+    font-size: 18px;
+
+    margin: 0;
+    margin-top: 98px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .comments {
+    flex-direction: row;
+
+    margin-top: 71px;
+  }
+
+  .comments__button-desktop {
+    display: block;
+
+    background: none;
+
+    border: none;
+
+    &--left {
+      margin-left: auto;
+      margin-right: 90px;
+      margin-bottom: 5px;
+    }
+
+    &--right {
+      margin-left: 90px;
+      margin-right: auto;
+      margin-bottom: 5px;
+    }
+  }
+
+  .comments__buttons {
+    display: none;
+  }
+
+  .comments__list {
+    margin: 0;
+
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 313px;
+
+      width: 79px;
+      height: 64px;
+
+      background-image: url("../img/icon-quotes.svg");
+      background-size: 79px 64px;
+    }
+  }
+
+  .comments__name {
+    font-size: 24px;
+  }
+
+  .comments__name-description {
+    font-size: 18px;
+  }
+
+  .comments__text {
+    width: 700px;
+
+    margin-top: 115px;
+  }
+}
