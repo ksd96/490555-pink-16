@@ -1,0 +1,143 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0;
+
+  min-width: 320px;
+}
+
+.main-form__description {
+  margin: 0;
+  padding: 0 20px;
+  margin-top: 45px;
+  margin-bottom: 34px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @color-main;
+  text-align: center;
+}
+
+.main-form__description span {
+  display: none;
+}
+
+.main-form__invalid,
+.main-form__valid{
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0;
+
+  width: 320px;
+
+  border: 1px solid green;
+}
+
+.main-form__invalid-title,
+.main-form__valid-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+.main-form__invalid-text,
+.main-form__valid-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: @color-main;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+}
+
+.main-form__invalid-button,
+.main-form__valid-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-family: inherit;
+
+  background-color: #2aab6d;
+
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 50px;
+
+  width: 280px;
+  height: 64px;
+
+  border: 0;
+}
+
+.main-form__invalid--invisible {
+  display: none;
+}
+
+.main-form__invalid--visible {
+  display: flex;
+}
+
+@media (min-width: @width-tablet) {
+  .main-form {
+    width: 660px;
+  }
+
+  .main-form__description {
+    font-size: 18px;
+
+    width: 495px;
+
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 92px;
+    margin-bottom: 71px;
+  }
+
+  .main-form__description span {
+    display: block;
+  }
+
+  .main-form__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-form__invalid,
+  .main-form__valid {
+    width: 460px;
+  }
+
+}
+
+@media (min-width: @width-desktop) {
+  .main-form {
+    width: 940px;
+  }
+
+  .main-form__description {
+    width: 765px;
+
+    margin-bottom: 31px;
+
+  }
+
+  .main-form__description span {
+    display: contents;
+  }
+}
