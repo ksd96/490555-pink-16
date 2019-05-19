@@ -15,7 +15,7 @@
       <include src="build/img/svg-sprite/svg-sprite.svg"></include>
     </div>
     <div class="body__wrapper">
-    <div class="header__wrapper">
+    <div class="body__container">
       <header class="header">
         <a class="header__logo" href="index.html">
           <svg class="header__image" width="74" height="23"><use xlink:href="#logo-pink-white-mobile"></use></svg>
@@ -52,7 +52,8 @@
             Видите, как не хватает ваших?</p>
         </div>
         <ul class="user-photos__list">
-          <li class="user user--top">
+          <li class="user-photos__item user user--top">
+            <div class="user__wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -75,124 +76,121 @@
                 <b class="user__likes">НРАВИТСЯ: 215</b>
               </div>
             </div>
+            </div>
           </li>
-          <li class="user-list">
-            <ul class="user-photos__tablet">
-              <li class="user">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+          <li class="user-photos__item user">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                  <img class="user__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
-                </picture>
-                <div class="user__profile">
-                  <b class="user__name">Левон <span class="user__time">(5 ЧАСОВ НАЗАД)</span></b>
-                  <p class="user__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                  <div class="user__profile-likes">
-                    <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
-                    <b class="user__likes">НРАВИТСЯ: 356</b>
-                  </div>
-                </div>
-              </li>
-              <li class="user">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="user__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+            </picture>
+            <div class="user__profile">
+              <b class="user__name">Левон <span class="user__time">(5 ЧАСОВ НАЗАД)</span></b>
+              <p class="user__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="user__profile-likes">
+                <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
+                <b class="user__likes">НРАВИТСЯ: 356</b>
+              </div>
+            </div>
+          </li>
+          <li class="user-photos__item user">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                  <img class="user__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
-                </picture>
-                <div class="user__profile">
-                  <b class="user__name">Антон <span class="user__time">(12 ЧАСОВ НАЗАД)</span></b>
-                  <p class="user__comment">Соседи будут рады!</p>
-                  <div class="user__profile-likes">
-                    <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
-                    <b class="user__likes">НРАВИТСЯ: 666</b>
-                  </div>
-                </div>
-              </li>
-              <li class="user">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="user__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+            </picture>
+            <div class="user__profile">
+              <b class="user__name">Антон <span class="user__time">(12 ЧАСОВ НАЗАД)</span></b>
+              <p class="user__comment">Соседи будут рады!</p>
+              <div class="user__profile-likes">
+                <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
+                <b class="user__likes">НРАВИТСЯ: 666</b>
+              </div>
+            </div>
+          </li>
+          <li class="user-photos__item user">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                  <img class="user__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
-                </picture>
-                <div class="user__profile">
-                  <b class="user__name">Борис <span class="user__time">(20 ЧАСОВ НАЗАД)</span></b>
-                  <p class="user__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                  <div class="user__profile-likes">
-                    <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
-                    <b class="user__likes">НРАВИТСЯ: 215</b>
-                  </div>
-                </div>
-              </li>
-              <li class="user">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="user__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+            </picture>
+            <div class="user__profile">
+              <b class="user__name">Борис <span class="user__time">(20 ЧАСОВ НАЗАД)</span></b>
+              <p class="user__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="user__profile-likes">
+                <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
+                <b class="user__likes">НРАВИТСЯ: 215</b>
+              </div>
+            </div>
+          </li>
+          <li class="user-photos__item user">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                  <img class="user__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
-                </picture>
-                <div class="user__profile">
-                  <b class="user__name">Сергей <span class="user__time">(25 ЧАСОВ НАЗАД)</span></b>
-                  <p class="user__comment">Самая кубанская в мире!</p>
-                  <div class="user__profile-likes">
-                    <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
-                    <b class="user__likes">НРАВИТСЯ: 4</b>
-                  </div>
-                </div>
-              </li>
-              <li class="user">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="user__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+            </picture>
+            <div class="user__profile">
+              <b class="user__name">Сергей <span class="user__time">(25 ЧАСОВ НАЗАД)</span></b>
+              <p class="user__comment">Самая кубанская в мире!</p>
+              <div class="user__profile-likes">
+                <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
+                <b class="user__likes">НРАВИТСЯ: 4</b>
+              </div>
+            </div>
+          </li>
+          <li class="user-photos__item user">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                  <img class="user__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
-                </picture>
-                <div class="user__profile">
-                  <b class="user__name">Максим <span class="user__time">(40 ЧАСОВ НАЗАД)</span></b>
-                  <p class="user__comment">Где снег-то?</p>
-                  <div class="user__profile-likes">
-                    <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
-                    <b class="user__likes">НРАВИТСЯ: 150</b>
-                  </div>
-                </div>
-              </li>
-              <li class="user">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="user__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+            </picture>
+            <div class="user__profile">
+              <b class="user__name">Максим <span class="user__time">(40 ЧАСОВ НАЗАД)</span></b>
+              <p class="user__comment">Где снег-то?</p>
+              <div class="user__profile-likes">
+                <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
+                <b class="user__likes">НРАВИТСЯ: 150</b>
+              </div>
+            </div>
+          </li>
+          <li class="user-photos__item user">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                  <img class="user__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
-                </picture>
-                <div class="user__profile">
-                  <b class="user__name">Надежда <span class="user__time">(45 ЧАСОВ НАЗАД)</span></b>
-                  <p class="user__comment">Всем GM и взаимные лайки!</p>
-                  <div class="user__profile-likes">
-                    <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
-                    <b class="user__likes">НРАВИТСЯ: 2560</b>
-                  </div>
-                </div>
-              </li>
-            </ul>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="user__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="180">
+            </picture>
+            <div class="user__profile">
+              <b class="user__name">Надежда <span class="user__time">(45 ЧАСОВ НАЗАД)</span></b>
+              <p class="user__comment">Всем GM и взаимные лайки!</p>
+              <div class="user__profile-likes">
+                <button class="user__btn" type="button"><span class="visually-hidden">Like</span></button>
+                <b class="user__likes">НРАВИТСЯ: 2560</b>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -245,7 +243,7 @@
               </div>
             </div>
             <div class="photo-filter__buttons">
-              <button class="photo-filter__button photo-filter__button--post" type="button">Запостить</button>
+              <button class="photo-filter__button photo-filter__button--post" type="submit">Запостить</button>
               <button class="photo-filter__button photo-filter__button--cancel" type="button">Отмена</button>
             </div>
           </form>
