@@ -15,30 +15,32 @@
       <include src="build/img/svg-sprite/svg-sprite.svg"></include>
     </div>
     <div class="body__wrapper">
-    <header class="header">
-      <a class="header__logo" href="#">
-        <svg class="header__image" width="74" height="23"><use xlink:href="#logo-pink-white-mobile"></use></svg>
-        <svg class="header__image header__image--tablet" width="146" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
-        <svg class="header__image header__image--desktop" width="146" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--active">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="header__wrapper">
+      <header class="header">
+        <a class="header__logo" href="index.html">
+          <svg class="header__image" width="74" height="23"><use xlink:href="#logo-pink-white-mobile"></use></svg>
+          <svg class="header__image header__image--tablet" width="146" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
+          <svg class="header__image header__image--desktop" width="146" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
+        </a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--photo site-list__item--active">
+              <a class="site-list__link site-list__link--active">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main class="main">
       <section class="user-photos">
         <div class="user-photos__box-title">
@@ -60,7 +62,11 @@
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="user__image user__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото панорама" width="320" height="137">
             </picture>
-            <span class="user__photo-day">ПАНОРАМА ДНЯ</span>
+            <div class="user__container">
+              <div class="user__box">
+               <span class="user__photo-day">ПАНОРАМА ДНЯ</span>
+              </div>
+            </div>
             <div class="user__profile user__profile--top">
               <b class="user__name">Анна <span class="user__time">(5 МИНУТ НАЗАД)</span></b>
               <p class="user__comment user__comment--top">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -202,12 +208,12 @@
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
             <img class="photo-filter__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="фото пользователя" width="280" height="374">
           </picture>
-          <div class="photo-filter__container">
+          <form class="photo-filter__container">
             <div class="photo-filter__settings settings">
               <ul class="settings__list">
                 <li class="settings__item">
                   <button class="settings__btn setting__btn--active" type="button">
-                    <svg class="settings__image settings__image--crop" width="48" height="48"><use xlink:href="#icon-editor-crop"></use></svg>
+                    <svg class="settings__image settings__image--crop" viewBox="0 0 48 48"><use xlink:href="#icon-editor-crop"></use></svg>
                   </button>
                   <div class="settings__range-control">
                     <div class="settings__scale"></div>
@@ -216,7 +222,7 @@
                 </li>
                 <li class="settings__item settings__item--center">
                   <button class="settings__btn" type="button">
-                    <svg class="settings__image settings__image--fill" width="48" height="48"><use xlink:href="#icon-editor-fill"></use></svg>
+                    <svg class="settings__image settings__image--fill" viewBox="0 0 48 48"><use xlink:href="#icon-editor-fill"></use></svg>
                   </button>
                   <div class="settings__range-control">
                     <div class="settings__scale"></div>
@@ -242,7 +248,7 @@
               <button class="photo-filter__button photo-filter__button--post" type="button">Запостить</button>
               <button class="photo-filter__button photo-filter__button--cancel" type="button">Отмена</button>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </main>
@@ -250,7 +256,7 @@
       <a class="footer__logo" href="#">
         <span class="visually-hidden">Логотип Пинк</span>
       </a>
-      <ul class="footer__social">
+      <ul class="footer__social footer__social--photo">
         <li class="footer__item">
           <a class="footer__link footer__link--tw" href="#">
             <svg width="17" height="15"><use xlink:href="#icon-twitter"></use></svg>
@@ -267,7 +273,7 @@
           </a>
         </li>
       </ul>
-      <div class="footer__developer developer">
+      <div class="footer__developer developer developer--photo">
         <b class="developer__text">Разработано</b>
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>

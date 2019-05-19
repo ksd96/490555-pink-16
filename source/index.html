@@ -15,49 +15,51 @@
       <include src="build/img/svg-sprite/svg-sprite.svg"></include>
     </div>
     <div class="body__wrapper">
-    <header class="header">
-      <a class="header__logo" href="#">
-        <svg class="header__image" width="74" height="23"><use xlink:href="#logo-pink-white-mobile"></use></svg>
-        <svg class="header__image header__image--tablet" width="146" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
-        <svg class="header__image header__image--desktop" width="146" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--active">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="header__wrapper">
+      <header class="header">
+        <a class="header__logo" href="#">
+          <svg class="header__image" width="74" height="23"><use xlink:href="#logo-pink-white-mobile"></use></svg>
+          <svg class="header__image header__image--tablet" width="146" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
+          <svg class="header__image header__image--desktop" width="146" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
+        </a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link site-list__link--active">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--photo">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main class="main">
       <section class="download">
         <div class="download__box">
           <p class="download__title">Взгляните на жизнь иначе!</p>
-          <button class="download__button" type="button">Скачать приложение</button>
+          <a class="download__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
               <a class="download__link" href="https://www.apple.com/ru/ios/app-store/">
-                <img class="download__logo" src="img/logo-apple.svg" alt="Логотип apple">
+                <img class="download__logo" src="img/logo-apple.svg" alt="Логотип apple" width="46" height="57">
               </a>
             </li>
             <li class="download__item">
               <a class="download__link" href="https://play.google.com/store?hl=ru">
-                <img class="download__logo download__logo--android" src="img/logo-android.svg" alt="Логотип android">
+                <img class="download__logo download__logo--android" src="img/logo-android.svg" alt="Логотип android" width="42" height="47">
               </a>
             </li>
             <li class="download__item">
               <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
-                <img class="download__logo download__logo--windows" src="img/logo-microsoft.svg" alt="Логотип windows">
+                <img class="download__logo download__logo--windows" src="img/logo-microsoft.svg" alt="Логотип windows" width="44" height="42">
               </a>
             </li>
           </ul>
@@ -99,7 +101,7 @@
       </section>
       <section class="comments">
         <button class="comments__button-desktop comments__button-desktop--left" type="button">
-          <img src="img/icon-review-arrow-left.svg" alt="кнопка влево" width="22" height="42">
+          <svg class="comment__image-btn" xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z"/></svg>
         </button>
         <ul class="comments__list">
           <li class="comments__item">
@@ -109,7 +111,7 @@
           </li>
         </ul>
         <button class="comments__button-desktop comments__button-desktop--right" type="button">
-          <img src="img/icon-review-arrow-right.svg" alt="кнопка вправо" width="22" height="42">
+          <svg class="comment__image-btn" xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path d="M19.661 20.859L.248 1.446A.847.847 0 0 1 1.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 0 1-1.198 0 .847.847 0 0 1 0-1.198l19.414-19.414z"/></svg>
         </button>
         <div class="comments__buttons">
           <button class="comments__btn comments__btn--active" type="button"></button>
@@ -125,6 +127,10 @@
               <b>1,99 USD</b>
             </th>
             <th class="price__title price__title--center">
+              <div class="price__hit">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 74 73"><path fill="#D22856" d="M31 0L0 30.581V73L74 0z"/></svg>
+              </div>
+              <span>ХИТ</span>
               <p>СТАНДАРТ</p>
               <b>3,99 USD</b>
             </th>
@@ -140,7 +146,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="-82.357 4.875 21.698 16.09"><path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
             </td>
             <td class="price__item price__item--center price__item--top">
-              <span>Розовый фильтр</span>
+              <span>РОЗОВЫЙ ФИЛЬТР</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="-82.357 4.875 21.698 16.09"><path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
             </td>
             <td class="price__item price__item--last price__item--top">
@@ -155,7 +161,7 @@
               <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.752" height="26.752"><path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg>
             </td>
             <td class="price__item price__item--center">
-              <span>Смайлики</span>
+              <span>СМАЙЛИКИ</span>
               <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="-82.357 4.875 21.698 16.09"><path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
             </td>
             <td class="price__item price__item--last">
@@ -170,7 +176,7 @@
               <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.752" height="26.752"><path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg>
             </td>
             <td class="price__item price__item--center">
-              <span>Комментарии</span>
+              <span>КОММЕНТАРИИ</span>
               <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.752" height="26.752"><path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg>
             </td>
             <td class="price__item price__item--last">
@@ -179,6 +185,11 @@
             </td>
           </tr>
         </table>
+        <div class="price__buttons">
+          <button class="price__btn" type="button"></button>
+          <button class="price__btn price__btn--active" type="button"></button>
+          <button class="price__btn" type="button"></button>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
@@ -193,12 +204,12 @@
           </li>
           <li class="contacts__item contacts__item--last">
             <h3 class="contacts__way">Приезжайте в гости:</h3>
-            <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts__text contacts__text--last">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
       </section>
       <section class="map">
-        <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002997!2d30.320858715957446!3d59.93871916905436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556544116116!5m2!1sru!2sru" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002997!2d30.320858715957446!3d59.93871916905436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556544116116!5m2!1sru!2sru"  height="200"  style="border:0" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="footer footer--index">
