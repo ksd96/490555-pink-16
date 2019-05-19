@@ -122,11 +122,29 @@
     margin-bottom: 20px;
 
     &--top {
-      width: @width-tablet;
-      min-height: 630px;
+      position: absolute;
+      left: 0;
+      top: 666px;
 
-      margin-bottom: 50px;
+      width: 100%;
+      min-height: 630px;
     }
+  }
+
+  .body--opened,
+  .body--nojs {
+    .user--top {
+      top: 923px;
+    }
+  }
+
+  .user__wrapper {
+    width: @width-tablet;
+    min-height: 630px;
+
+    position: relative;
+
+    margin: 0 auto;
   }
 
   .user__image {
@@ -246,9 +264,12 @@
     margin-bottom: 54px;
 
     &--top {
-      width: 100%;
-      margin-bottom: 22px;
+      top: 633px;
     }
+  }
+
+  .user__wrapper {
+    width: 100%;
   }
 
   .user__photo-day {

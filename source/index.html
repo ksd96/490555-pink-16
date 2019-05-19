@@ -15,7 +15,7 @@
       <include src="build/img/svg-sprite/svg-sprite.svg"></include>
     </div>
     <div class="body__wrapper">
-    <div class="header__wrapper">
+    <div class="body__container">
       <header class="header">
         <a class="header__logo" href="#">
           <svg class="header__image" width="74" height="23"><use xlink:href="#logo-pink-white-mobile"></use></svg>
@@ -104,10 +104,20 @@
           <svg class="comment__image-btn" xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z"/></svg>
         </button>
         <ul class="comments__list">
+          <li class="comments__item visually-hidden">
+            <h3></h3>
+            <b></b>
+            <p></p>
+          </li>
           <li class="comments__item">
             <h3 class="comments__name">Николай Петров</h3>
             <b class="comments__name-description">25 лет, водитель трамвая</b>
             <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="comments__item visually-hidden">
+            <h3></h3>
+            <b></b>
+            <p></p>
           </li>
         </ul>
         <button class="comments__button-desktop comments__button-desktop--right" type="button">
