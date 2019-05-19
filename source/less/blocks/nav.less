@@ -21,6 +21,15 @@
   margin-right: 18px;
 
   border: 0;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-menu-cross-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: @width-menu) {
@@ -36,6 +45,15 @@
     background-image: url("../img/icon-menu-burger.svg");
     height: 24px;
     width: 51px;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-menu-burger-hover.svg");
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .body--nojs .nav__toggle {
@@ -55,7 +73,7 @@
 
 @media (min-width: @width-desktop) {
   .nav {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .nav__toggle {

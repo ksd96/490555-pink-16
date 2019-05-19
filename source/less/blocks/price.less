@@ -1,3 +1,212 @@
+@media (max-width: 659px) {
+  .price {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 42px;
+
+    min-height: 470px;
+
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top left;
+    background-color: @color-decor;
+  }
+
+  .price__table {
+    display: flex;
+
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 91px;
+    margin-bottom: 42px;
+
+    width: 320px;
+    height: 280px;
+  }
+
+  .price__header {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .price__title {
+    display: block;
+
+    min-height: 96px;
+
+    background-color: @color-main;
+
+    border-left: 2px solid #e5e5e5;
+
+    font-family: inherit;
+
+    &--center {
+      width: 274px;
+
+      position: relative;
+    }
+
+    &--first {
+      width: 18px;
+
+      border-left: none;
+    }
+
+    &--last {
+      width: 18px;
+    }
+  }
+
+  .price__title p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 2px;
+  }
+
+  .price__title b {
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 300;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .price__line {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .price__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 57px;
+
+    background-color: #ffffff;
+
+    border-left: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+
+    &--center {
+      width: 274px;
+    }
+
+    &--first {
+      width: 18px;
+
+      border-left: none;
+    }
+
+    &--last {
+      width: 18px;
+    }
+  }
+
+  .price__item span {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @color-main;
+
+    margin-left: 21px;
+  }
+
+  .price__item svg {
+    margin-right: 16px;
+  }
+
+  .price__title--first p,
+  .price__title--first b,
+  .price__title--last p,
+  .price__title--last b,
+  .price__name,
+  .price__item--first span,
+  .price__item--first svg,
+  .price__item--last span,
+  .price__item--last svg {
+    display: none;
+  }
+
+  .price__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0;
+
+    width: 59px;
+  }
+
+  .price__btn {
+    width: 6px;
+    height: 6px;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #bec2c7;
+
+    border-radius: 10px;
+    border: none;
+
+    &--active {
+      width: 12px;
+      height: 12px;
+
+      border: 3px solid @color-main;
+      background-color: #e9ebec;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #7e868f;
+    }
+
+    &:active {
+      background-color: #e9ebec;
+    }
+  }
+
+  .price__hit {
+    position: absolute;
+    top: 0;
+    left: -2px;
+
+    width: 74px;
+    height: 73px;
+  }
+
+  .price__title--center span {
+    transform: rotate(-45deg);
+
+    position: absolute;
+    top: 11px;
+    left: 9px;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
 
 @media (min-width: @width-tablet) {
   .price {
@@ -50,6 +259,12 @@
       border-right: 2px solid #ffffff;
       width: 153px;
     }
+
+    &--first {
+      width: 151px;
+
+      padding-left: 2px;
+    }
   }
 
   .price__title p {
@@ -71,6 +286,32 @@
     line-height: 27px;
     font-weight: 300;
     color: #ffffff;
+  }
+
+  .price__hit {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+  }
+
+  .price__title--center {
+    position: relative;
+  }
+
+  .price__title--center span {
+    transform: rotate(-45deg);
+
+    position: absolute;
+    top: 3px;
+    left: 7px;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
   }
 
   .price__line {
@@ -125,6 +366,10 @@
   .price__item span {
     display: none;
   }
+
+  .price__buttons {
+    display: none;
+  }
 }
 
 @media (min-width: @width-desktop) {
@@ -147,6 +392,10 @@
   .price__title {
     width: 234px;
     height: 98px;
+
+    &--first {
+      width: 232px;
+    }
   }
 
   .price__title p {
@@ -158,6 +407,16 @@
 
   .price__title b {
     font-size: 24px;
+  }
+
+  .price__hit {
+    width: 74px;
+    height: 73px;
+  }
+
+  .price__title--center span {
+    top: 11px;
+    left: 12px;
   }
 
   .price__line {

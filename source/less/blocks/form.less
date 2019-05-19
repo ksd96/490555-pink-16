@@ -1,6 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
+
+  position: relative;
 }
 
 .form__name {
@@ -229,8 +231,11 @@
 }
 
 .form__os {
-  display: none;
+  display: flex;
   flex-direction: column;
+
+  position: absolute;
+  top: 1236px;
 
   margin: 0 auto;
   padding: 0;
@@ -242,10 +247,6 @@
   background-color: @color-decor;
 
   order: 4;
-
-  &--mobile {
-    display: flex;
-  }
 }
 
 .form__os-title {
@@ -339,6 +340,7 @@
 
   margin: 0 auto;
   padding: 0;
+  margin-top: 365px;
 
   width: 280px;
 
@@ -369,9 +371,9 @@
   padding: 0;
   padding-top: 15px;
   padding-left: 19px;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 
-  min-height: 200px;
+  min-height: 183px;
 
   border: 2px solid @color-decor;
 }
@@ -418,7 +420,7 @@
 
   margin: 0 auto;
   padding: 0;
-  margin-top: 45px;
+  margin-top: 35px;
 }
 
 .form__text .all {
@@ -464,7 +466,7 @@
   .form__os {
     display: flex;
 
-    position: relative;
+    position: sticky;
 
     background-color: #ffffff;
 
@@ -653,7 +655,7 @@
 
   .form__emotions-item {
     width: 476px;
-    min-height: 192px;
+    min-height: 175px;
 
     margin: 0 auto;
     margin-top: 45px;
@@ -667,6 +669,7 @@
     margin: 0 auto;
     padding: 0;
     margin-top: 66px;
+    margin-bottom: 51px;
 
     width: 620px;
 
@@ -760,7 +763,15 @@
   }
 
   .form__contact-item input {
-    width: 279px;
+    width: 283px;
+
+    padding-left: 16px;
+  }
+
+  .form__contact-item--mail input {
+    padding-left: 19px;
+
+    width: 280px;
   }
 
   .form__progress {
@@ -814,6 +825,7 @@
     width: 940px;
 
     margin-top: 64px;
+    margin-bottom: 0;
   }
 
   .form__text .desktop {
